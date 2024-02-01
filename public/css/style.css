@@ -226,9 +226,63 @@ header .icons-section__search-icon {
   margin-bottom: 20px;
 }
 
-.main {
-  height: 50vh;
-  background-color: #777777;
+.home {
+  color: #FFFFFF;
+}
+.home h1 {
+  visibility: hidden;
+}
+.home__front {
+  min-height: 60vh;
+  background: #333333;
+  padding: 50px 20px 60px 20px;
+}
+.home__front p {
+  font-family: "Archivo";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  width: 70%;
+  margin-bottom: 30px;
+}
+.home__front h2 {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.home__front h2 span {
+  display: block;
+}
+.home__front_buttons {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 24px;
+}
+.home__front_buttons a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Archivo";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.7999999523px;
+  text-align: left;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 22.8px 48.73px;
+}
+.home__front_buttons-tour {
+  background: #BEAD8E;
+}
+.home__front_buttons-more {
+  color: rgba(255, 255, 255, 0.3294117647);
+  border: 2px solid rgba(255, 255, 255, 0.3294117647);
 }
 
 @media screen and (min-width: 1024px) {
