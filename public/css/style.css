@@ -227,17 +227,15 @@ header .icons-section__search-icon {
 }
 
 .home {
+  background-color: #FFFFFF;
+}
+.home .front__section {
   color: #FFFFFF;
-}
-.home h1 {
-  visibility: hidden;
-}
-.home__front {
   min-height: 60vh;
   background: #333333;
   padding: 50px 20px 60px 20px;
 }
-.home__front p {
+.home .front__section p {
   font-family: "Archivo";
   font-size: 13px;
   font-weight: 700;
@@ -247,7 +245,7 @@ header .icons-section__search-icon {
   width: 70%;
   margin-bottom: 30px;
 }
-.home__front h2 {
+.home .front__section h1 {
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
@@ -255,16 +253,16 @@ header .icons-section__search-icon {
   text-align: left;
   margin-bottom: 30px;
 }
-.home__front h2 span {
+.home .front__section h1 span {
   display: block;
 }
-.home__front_buttons {
+.home .front__section_buttons {
   display: flex;
   flex-direction: column;
   width: 70%;
   gap: 24px;
 }
-.home__front_buttons a {
+.home .front__section_buttons a {
   color: #FFFFFF;
   text-decoration: none;
   font-family: "Archivo";
@@ -277,12 +275,210 @@ header .icons-section__search-icon {
   text-align: center;
   padding: 22.8px 48.73px;
 }
-.home__front_buttons-tour {
+.home .front__section_buttons-tour {
   background: #BEAD8E;
 }
-.home__front_buttons-more {
+.home .front__section_buttons-more {
   color: rgba(255, 255, 255, 0.3294117647);
   border: 2px solid rgba(255, 255, 255, 0.3294117647);
+}
+.home .schedule__section {
+  color: #FFFFFF;
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+}
+.home .schedule__section-calendar {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: self-start;
+  margin: auto;
+  justify-content: center;
+  height: auto;
+  max-width: 600px;
+}
+.home .schedule__section .input__container__arrival {
+  margin-bottom: 24px;
+}
+.home .schedule__section .input__container__arrival label {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 18.75px;
+}
+.home .schedule__section .input-calendar {
+  position: relative;
+  display: flex;
+  padding-bottom: 7px;
+  flex-direction: row-reverse;
+  background-color: transparent;
+  color: #b3a5a5;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom-color: #BEAD8E;
+  width: 290px;
+  padding-left: 30px;
+  padding-top: 20px;
+  font-family: "Roboto";
+}
+.home .schedule__section .input-calendar[type=date]::-webkit-calendar-picker-indicator {
+  background-size: 16px 16px;
+  height: 20px;
+  width: 100%;
+  background-position-x: 1%;
+  color: #BEAD8E;
+  position: absolute;
+  cursor: pointer;
+  filter: invert(0.8);
+}
+.home .schedule__section .input__container__departure label {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 18.75px;
+}
+.home .schedule__section-button {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 90%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.home .schedule__section-button:hover {
+  transform: scale(1.02);
+}
+.home .schedule__section-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 60px;
+  background-color: #BEAD8E;
+  color: #FFFFFF;
+  border: none;
+  font-size: 14px;
+  font-family: Archivo;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.8px;
+  text-decoration: none;
+}
+.home .about__section {
+  background: #F9F9F9;
+  font-family: "Archivo";
+  padding: 38px 20px;
+  margin-top: 38px;
+}
+.home .about__section-info h2 {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+  color: #777777;
+}
+.home .about__section-info h3 {
+  font-family: "Old Standard TT";
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.home .about__section-info p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #777777;
+  margin-bottom: 24px;
+}
+.home .about__section-info-button {
+  background: #BDAC8D;
+  width: 216px;
+  height: 60px;
+}
+.home .about__section-info-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 216px;
+  height: 60px;
+  background-color: #BEAD8E;
+  color: #FFFFFF;
+  border: none;
+  font-size: 14px;
+  font-family: Archivo;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.8px;
+  text-decoration: none;
+}
+.home .about__section-feature {
+  background: #FFFFFF;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 54px 0;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1764705882);
+}
+.home .about__section-feature-img {
+  width: 100%;
+}
+.home .about__section-feature-detail-team, .home .about__section-feature-detail-room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px;
+}
+.home .about__section-feature-detail-team img, .home .about__section-feature-detail-room img {
+  width: 68px;
+}
+.home .about__section-feature-detail-team h4, .home .about__section-feature-detail-room h4 {
+  text-align: center;
+  font-family: "Old Standard TT";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.8999999762px;
+  text-align: left;
+  margin-top: 29.5px;
+}
+.home .about__section-feature-detail-team p, .home .about__section-feature-detail-room p {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: 21px;
+}
+.home .about__section-feature-detail-team {
+  background-image: url("../../assets/home/bg_strong-team.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 54px;
+}
+.home .about__section-feature-detail-room {
+  background: #222222;
+  color: #FFFFFF;
 }
 
 @media screen and (min-width: 1024px) {
