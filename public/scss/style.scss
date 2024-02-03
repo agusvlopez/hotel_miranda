@@ -1,4 +1,5 @@
 @import 'variables.scss';
+@import './home/food.scss';
 
 html,
 * {
@@ -897,14 +898,9 @@ header {
             width: 100vw;
         }
 
-        .swiper-container {
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-        }
-
-        .swiper-wrapper {
-            width: 100%;
+        .swiper-slide {
+            height: fit-content;
+            width: fit-content;
         }
 
         .cards-container {

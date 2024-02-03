@@ -123,8 +123,8 @@
                 <h2>Facilities</h2>
                 <h3>Core Features</h3>
             </div>
-            <div class="swiper-container features__section-cards-container">
-                <div class="swiper-wrapper cards-container">
+            <div class="features__section-cards-container">
+                <div class="cards-container">
                     <div class="swiper-slide card card1">
                         <div class="card-img">
                             <img src="/assets/home/icon_facilities-1.svg" alt="">
@@ -231,22 +231,151 @@
                 </div>
             </div>
         </section>
+        <section class="food__section">
+            <img src="/assets/home/icon_food-section-mobile.png" alt="icon food" class="icon-food-mobile">
+            <div class="food__section-info">
+                <h2>MENU</h2>
+                <h3>Our Foods Menu</h3>
+            </div>
+            <div class="food__section-cards-container">
+                <img src="/assets/home/icon_food-section-desktop.png" class="icon-food-desktop">
+                <div class="food__cards-container  swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="card-food card-food1  swiper-slide">
+                            <div class="section-food">
+                                <div class="card-img-food">
+                                    <img src="/assets/home/food_eggs-bacon.jpg"
+                                        alt="Breakfast with eggs, bacon, fruits and chickpeas.">
+                                </div>
+                                <div class="section-food-info">
+                                    <h4>Eggs & Bacon</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="section-food">
+                                <div class="card-img-food">
+                                    <img src="/assets/home/food_coffee.jpg" alt="A cup of coffee.">
+                                </div>
+                                <div class="section-food-info">
+                                    <h4>Tea or Coffee</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="section-food">
+                                <div class="card-img-food">
+                                    <img src="/assets/home/food_chia-oatmeal.jpg"
+                                        alt="Two chia puddings with oats and fruit.">
+                                </div>
+                                <div class="section-food-info">
+                                    <h4>Chia Oatmeal</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-food card-food2  swiper-slide">
+                            <div class="section-food">
+                                <div class="card-img-food">
+                                    <img src="/assets/home/food_fruit-parfait.jpg" alt="Fruit parfait with strawberries.">
+                                </div>
+                                <div class="section-food-info">
+                                    <h4>Fruit Parfait</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="section-food">
+                                <div class="card-img-food">
+                                    <img src="/assets/home/food_marmalade-selection.jpg" alt="Blueberry jam with toast.">
+                                </div>
+                                <div class="section-food-info">
+                                    <h4>Marmalade Selection</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                            <div class="section-food">
+                                <div class="card-img-food">
+                                    <img src="/assets/home/food_cheese-plate.jpg" alt="Variety of cheeses and wine.">
+                                </div>
+                                <div class="section-food-info">
+                                    <h4>Cheese Plate</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="food__cards-container-button">
+                    <button class="prev-btn2  "><img src="/assets/home/icon-slider_left-arrow.svg"
+                            alt="left arrow"></button>
+                    <button class="next-btn2  "><img src="/assets/home/icon-slider_right-arrow.png"
+                            alt="right arrow"></button>
+                </div>
+            </div>
+            <div class="food__section-slider">
+                <div class="food__section-slider-wrapper">
+                    <img id="food-img1" src="/assets/home/slider_food-1.jpg" alt="Breakfast with coffee.">
+                    <img id="food-img2" src="/assets/home/slider_food-2.jpg"
+                        alt="Breakfast with fruit salad, ham and cheese, bread and scrambled eggs.">
+                    <img id="food-img3" src="/assets/home/slider_food-3.jpg" alt="Snack with orange juice.">
+                </div>
+                <div class="food__section-slider-nav">
+                    <a href="#food-img1"></a>
+                    <a href="#food-img2"></a>
+                    <a href="#food-img3"></a>
+                </div>
+            </div>
+        </section>
     </div>
 @endsection
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Verificar si el dispositivo es móvil
-        console.log(window.matchMedia("(max-width:1024px)").matches);
-        if (window.matchMedia("(max-width: 1024px)").matches) {
-            var swiper = new Swiper('.swiper-container', {
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     // Verificar si el dispositivo es móvil
+    //     console.log(window.matchMedia("(max-width:1024px)").matches);
+    //     if (window.matchMedia("(max-width: 1024px)").matches) {
+    //         var swiper = new Swiper('.swiper-container', {
 
-                slidesPerView: 'auto', // Muestra la cantidad de slides que quepan en el contenedor
-                spaceBetween: 20, // Espacio entre las tarjetas
-                loop: true, // Activa el bucle infinito
-                // Más opciones de configuración según tus necesidades
-                centeredSlides: true,
+    //             slidesPerView: 'auto', // Muestra la cantidad de slides que quepan en el contenedor
+    //             spaceBetween: 20, // Espacio entre las tarjetas
+    //             loop: true, // Activa el bucle infinito
+    //             // Más opciones de configuración según tus necesidades
+    //             centeredSlides: true,
+    //         });
+    //     }
+    // });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.matchMedia("(max-width: 1024px)").matches) {
+            var swiper = new Swiper('.food__cards-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                    nextEl: '.next-btn2',
+                    prevEl: '.prev-btn2',
+                },
             });
+
+            // Manejar el clic en el botón previo
+            document.querySelector('.prev-btn2').addEventListener('click', function() {
+                swiper.slidePrev();
+            });
+
+            // Manejar el clic en el botón siguiente
+            document.querySelector('.next-btn2').addEventListener('click', function() {
+                swiper.slideNext();
+            });
+        }
+
+        if (window.matchMedia("(min-width: 1024px)").matches) {
+            // Eliminar la clase swiper-wrapper si existe
+            let swiperWrapper = document.querySelector('.swiper-wrapper');
+            let swiperContainer = document.querySelector('.swiper-container');
+            console.log("selected:",
+                swiperWrapper);
+            if (swiperWrapper) {
+                swiperWrapper.classList.remove('swiper-wrapper');
+                swiperContainer.classList.remove('swiper-container');
+            }
         }
     });
 </script>
