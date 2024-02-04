@@ -660,7 +660,40 @@ header {
         padding-bottom: 40px;
         background: #FFFFFF;
 
-        .features__section-info {
+        &-slider-nav {
+            display: flex;
+            column-gap: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            padding-top: 15px;
+
+            a {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #EDEDED;
+                opacity: 1.0;
+                transition: opacity ease 1s;
+            }
+
+            a:hover {
+                background-color: $color-botton;
+            }
+
+            .a-selected {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $color-botton;
+                opacity: 1.0;
+                transition: opacity ease 1s;
+            }
+        }
+
+        &-info {
             padding-top: 30px;
 
             h2 {
@@ -713,10 +746,6 @@ header {
             transition-duration: 0.5s;
         }
 
-        .swiper-container {
-            max-height: fit-content;
-        }
-
         .card:hover {
             scale: 1.05;
         }
@@ -763,18 +792,6 @@ header {
                 font-weight: $weight-700;
                 line-height: 130px;
                 color: rgb(119 119 119 / 15%);
-            }
-
-            .card-elipses {
-                display: flex;
-                justify-content: center;
-                gap: 4px;
-
-                span img {
-                    margin-top: 30px;
-                    margin-bottom: 30px;
-                    width: 100%;
-                }
             }
         }
     }
@@ -891,6 +908,11 @@ header {
             width: 100%;
             max-width: 100%;
             background-color: #f2f2f2;
+
+        }
+
+        .features__section-slider-nav {
+            display: none;
         }
 
         .features__section-cards-container {

@@ -10,7 +10,7 @@
 .food__section .icon-food-mobile {
   position: absolute;
   width: 65px;
-  right: -10%;
+  right: -8%;
   top: -5%;
 }
 .food__section-info {
@@ -25,7 +25,7 @@
   color: #777777;
 }
 .food__section-info h3 {
-  margin-top: 30px;
+  margin-top: 21px;
   font-family: "Old Standard TT";
   font-size: 48px;
   font-weight: 400;
@@ -786,10 +786,39 @@ header .icons-section__search-icon {
   padding-bottom: 40px;
   background: #FFFFFF;
 }
-.home .features__section .features__section-info {
+.home .features__section-slider-nav {
+  display: flex;
+  column-gap: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding-top: 15px;
+}
+.home .features__section-slider-nav a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #EDEDED;
+  opacity: 1;
+  transition: opacity ease 1s;
+}
+.home .features__section-slider-nav a:hover {
+  background-color: #BEAD8E;
+}
+.home .features__section-slider-nav .a-selected {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #BEAD8E;
+  opacity: 1;
+  transition: opacity ease 1s;
+}
+.home .features__section-info {
   padding-top: 30px;
 }
-.home .features__section .features__section-info h2 {
+.home .features__section-info h2 {
   text-align: center;
   font-family: "Archivo";
   font-size: 14px;
@@ -799,7 +828,7 @@ header .icons-section__search-icon {
   color: #777777;
   margin-top: 36px;
 }
-.home .features__section .features__section-info h3 {
+.home .features__section-info h3 {
   text-align: center;
   margin-top: 21px;
   font-family: "Old Standard TT";
@@ -831,9 +860,6 @@ header .icons-section__search-icon {
   border-radius: 7px;
   transition-property: scale();
   transition-duration: 0.5s;
-}
-.home .features__section .swiper-container {
-  max-height: fit-content;
 }
 .home .features__section .card:hover {
   scale: 1.05;
@@ -891,26 +917,6 @@ header .icons-section__search-icon {
   font-weight: 700;
   line-height: 130px;
   color: rgba(119, 119, 119, 0.15);
-}
-.home .features__section .card1 .card-elipses,
-.home .features__section .card2 .card-elipses,
-.home .features__section .card3 .card-elipses,
-.home .features__section .card4 .card-elipses,
-.home .features__section .card5 .card-elipses,
-.home .features__section .card6 .card-elipses {
-  display: flex;
-  justify-content: center;
-  gap: 4px;
-}
-.home .features__section .card1 .card-elipses span img,
-.home .features__section .card2 .card-elipses span img,
-.home .features__section .card3 .card-elipses span img,
-.home .features__section .card4 .card-elipses span img,
-.home .features__section .card5 .card-elipses span img,
-.home .features__section .card6 .card-elipses span img {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -996,6 +1002,9 @@ header .icons-section__search-icon {
     width: 100%;
     max-width: 100%;
     background-color: #f2f2f2;
+  }
+  .home .features__section-slider-nav {
+    display: none;
   }
   .home .features__section-cards-container {
     overflow: visible;

@@ -125,7 +125,7 @@
             </div>
             <div class="features__section-cards-container">
                 <div class="cards-container">
-                    <div class="swiper-slide card card1">
+                    <div class="card card1" id="feature-1">
                         <div class="card-img">
                             <img src="/assets/home/icon_facilities-1.svg" alt="">
                         </div>
@@ -133,17 +133,16 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna..</p>
                         <span class="card-number">01</span>
-                        <span class="card-elipses">
-                            <img src="/assets/home/elipse-brown.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                        </span>
+                        <div class="features__section-slider-nav">
+                            <a href="#feature-1" class="a-selected"></a>
+                            <a href="#feature-2"></a>
+                            <a href="#feature-3"></a>
+                            <a href="#feature-4"></a>
+                            <a href="#feature-5"></a>
+                            <a href="#feature-6"></a>
+                        </div>
                     </div>
-
-                    <div class="swiper-slide card card2">
+                    <div class="card card2" id="feature-2">
                         <div class="card-img">
                             <img src="/assets/home/icon_facilities-2.png" alt="">
                         </div>
@@ -151,16 +150,16 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna..</p>
                         <span class="card-number">02</span>
-                        <span class="card-elipses">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-brown.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                        </span>
+                        <div class="features__section-slider-nav">
+                            <a href="#feature-1"></a>
+                            <a href="#feature-2" class="a-selected"></a>
+                            <a href="#feature-3"></a>
+                            <a href="#feature-4"></a>
+                            <a href="#feature-5"></a>
+                            <a href="#feature-6"></a>
+                        </div>
                     </div>
-                    <div class="swiper-slide card card3">
+                    <div class="card card3" id="feature-3">
                         <div class="card-img">
                             <img src="/assets/home/icon_facilities-3.png" alt="">
                         </div>
@@ -168,16 +167,16 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna..</p>
                         <span class="card-number">03</span>
-                        <span class="card-elipses">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-brown.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                        </span>
+                        <div class="features__section-slider-nav">
+                            <a href="#feature-1"></a>
+                            <a href="#feature-2"></a>
+                            <a href="#feature-3" class="a-selected"></a>
+                            <a href="#feature-4"></a>
+                            <a href="#feature-5"></a>
+                            <a href="#feature-6"></a>
+                        </div>
                     </div>
-                    <div class="swiper-slide card card4">
+                    <div class="card card4" id="feature-4">
                         <div class="card-img">
                             <img src="/assets/home/icon_facilities-4.png" alt="">
                         </div>
@@ -185,16 +184,16 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna..</p>
                         <span class="card-number">04</span>
-                        <span class="card-elipses">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-brown.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                        </span>
+                        <div class="features__section-slider-nav">
+                            <a href="#feature-1"></a>
+                            <a href="#feature-2"></a>
+                            <a href="#feature-3"></a>
+                            <a href="#feature-4" class="a-selected"></a>
+                            <a href="#feature-5"></a>
+                            <a href="#feature-6"></a>
+                        </div>
                     </div>
-                    <div class="swiper-slide card card5">
+                    <div class="card card5" id="feature-5">
                         <div class="card-img">
                             <img src="/assets/home/icon_facilities-5.png" alt="">
                         </div>
@@ -202,16 +201,16 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna..</p>
                         <span class="card-number">05</span>
-                        <span class="card-elipses">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-brown.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                        </span>
+                        <div class="features__section-slider-nav">
+                            <a href="#feature-1"></a>
+                            <a href="#feature-2"></a>
+                            <a href="#feature-3"></a>
+                            <a href="#feature-4"></a>
+                            <a href="#feature-5" class="a-selected"></a>
+                            <a href="#feature-6"></a>
+                        </div>
                     </div>
-                    <div class="swiper-slide card card6">
+                    <div class="card card6" id="feature-6">
                         <div class="card-img">
                             <img src="/assets/home/icon_facilities-6.png" alt="">
                         </div>
@@ -219,14 +218,14 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna..</p>
                         <span class="card-number">06</span>
-                        <span class="card-elipses">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-white.svg" alt="">
-                            <img src="/assets/home/elipse-brown.svg" alt="">
-                        </span>
+                        <div class="features__section-slider-nav">
+                            <a href="#feature-1"></a>
+                            <a href="#feature-2"></a>
+                            <a href="#feature-3"></a>
+                            <a href="#feature-4"></a>
+                            <a href="#feature-5"></a>
+                            <a href="#feature-6" class="a-selected"></a>
+                        </div>
                     </div>
                 </div>
             </div>
