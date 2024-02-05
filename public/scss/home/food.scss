@@ -17,7 +17,6 @@
     }
 
     &-info {
-        padding-top: 30px;
 
         h2 {
             font-family: $archivo-font;
@@ -78,7 +77,7 @@
                 justify-content: space-around;
 
                 .card-img-food {
-                    width: 45%;
+                    width: 50%;
                     overflow: hidden;
 
                     img {
@@ -89,7 +88,7 @@
                 }
 
                 .section-food-info {
-                    width: 55%;
+                    width: 50%;
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
@@ -199,67 +198,105 @@
 
 
 @media only screen and (min-width: 1024px) {
-    .icon-food-desktop {
-        position: absolute;
-        width: 100px;
-        left: 3%;
-        top: -46%;
-        z-index: 999;
-        display: flex;
-    }
-
-    .icon-food-mobile {
-        display: none;
-    }
-
     .food__section {
         width: 100%;
         max-width: 100%;
         margin-bottom: 60px;
         background-color: $background-white;
-    }
+        margin: auto;
+        padding-top: 161px;
 
-    .food__section-cards-container {
-        overflow: visible;
-    }
+        &-info {
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            max-width: 900px;
+            margin: auto;
+            padding: 10px;
+            padding-top: 30px;
+        }
 
-    .food__cards-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
+        .swiper-slide {
+            display: block;
+        }
 
-    .card-food {
-        max-width: 300px;
-        margin: 0;
-        background-color: $background-white;
-    }
+        .icon-food-mobile {
+            display: none;
+        }
 
-    .prev-btn2 img,
-    .next-btn2 img {
-        display: none;
-    }
+        &-cards-container {
+            overflow: visible;
 
-    .food__section-slider {
-        max-width: 900px;
-    }
 
-    .food__section-slider-wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        aspect-ratio: auto;
-        gap: 20px;
-        /* Espacio entre las imágenes */
-        overflow: hidden;
-    }
+            .icon-food-desktop {
+                position: absolute;
+                width: 120px;
+                left: -15%;
+                top: -50%;
+                z-index: 999;
+                display: flex;
+            }
 
-    .food__section-slider-wrapper img {
-        width: 100%;
-        /* Imágenes que ocupan el 100% del ancho */
-        height: 200px;
-    }
+            .food__cards-container {
+                margin: auto;
+                display: block;
+                height: fit-content;
 
-    .food__section-slider-nav {
-        display: none;
+                div:first-child {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+
+                    // Estilos para el primer div hijo de .food__cards-container
+                    div:first-child {
+                        display: flex;
+                        justify-content: space-around;
+                        gap: 0;
+                    }
+                }
+
+                .card-food {
+                    max-width: 500px;
+                    margin: 0;
+                    background-color: $background-white;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .card-img-food {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+
+            }
+        }
+
+        .prev-btn2 img,
+        .next-btn2 img {
+            display: none;
+        }
+
+        &-slider {
+            max-width: 900px;
+
+            &-wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                aspect-ratio: auto;
+                gap: 20px;
+                /* Espacio entre las imágenes */
+                overflow: hidden;
+            }
+
+            &-wrapper img {
+                width: 100%;
+                /* Imágenes que ocupan el 100% del ancho */
+                height: 200px;
+            }
+
+            &-nav {
+                display: none;
+            }
+        }
     }
 }

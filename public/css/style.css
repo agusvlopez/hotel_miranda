@@ -13,9 +13,6 @@
   right: -8%;
   top: -5%;
 }
-.food__section-info {
-  padding-top: 30px;
-}
 .food__section-info h2 {
   font-family: "Archivo";
   font-size: 14px;
@@ -66,7 +63,7 @@
   justify-content: space-around;
 }
 .food__section .food__cards-container .card-food .section-food .card-img-food {
-  width: 45%;
+  width: 50%;
   overflow: hidden;
 }
 .food__section .food__cards-container .card-food .section-food .card-img-food img {
@@ -75,7 +72,7 @@
   object-fit: cover;
 }
 .food__section .food__cards-container .card-food .section-food .section-food-info {
-  width: 55%;
+  width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -165,38 +162,68 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .icon-food-desktop {
-    position: absolute;
-    width: 100px;
-    left: 3%;
-    top: -46%;
-    z-index: 999;
-    display: flex;
-  }
-  .icon-food-mobile {
-    display: none;
-  }
   .food__section {
     width: 100%;
     max-width: 100%;
     margin-bottom: 60px;
     background-color: #FFFFFF;
+    margin: auto;
+    padding-top: 161px;
+  }
+  .food__section-info {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 30px;
+  }
+  .food__section .swiper-slide {
+    display: block;
+  }
+  .food__section .icon-food-mobile {
+    display: none;
   }
   .food__section-cards-container {
     overflow: visible;
   }
-  .food__cards-container {
+  .food__section-cards-container .icon-food-desktop {
+    position: absolute;
+    width: 120px;
+    left: -15%;
+    top: -50%;
+    z-index: 999;
+    display: flex;
+  }
+  .food__section-cards-container .food__cards-container {
+    margin: auto;
+    display: block;
+    height: fit-content;
+  }
+  .food__section-cards-container .food__cards-container div:first-child {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  .card-food {
-    max-width: 300px;
+  .food__section-cards-container .food__cards-container div:first-child div:first-child {
+    display: flex;
+    justify-content: space-around;
+    gap: 0;
+  }
+  .food__section-cards-container .food__cards-container .card-food {
+    max-width: 500px;
     margin: 0;
     background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
   }
-  .prev-btn2 img,
-  .next-btn2 img {
+  .food__section-cards-container .food__cards-container .card-food .card-img-food {
+    width: 100%;
+    display: block;
+  }
+  .food__section .prev-btn2 img,
+  .food__section .next-btn2 img {
     display: none;
   }
   .food__section-slider {
@@ -848,6 +875,7 @@ header .icons-section__search-icon {
 .home .features__section .cards-container {
   display: flex;
   transition: transform 0.3s ease;
+  justify-content: center;
 }
 .home .features__section .card {
   flex: 0 0 300px;
@@ -1001,7 +1029,6 @@ header .icons-section__search-icon {
   .home .features__section {
     width: 100%;
     max-width: 100%;
-    background-color: #f2f2f2;
   }
   .home .features__section-slider-nav {
     display: none;
