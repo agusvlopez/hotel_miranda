@@ -42,21 +42,23 @@
                     <a href="rooms-grid">BOOK NOW</a>
                 </div>
             </div>
-            <div class="about__section-feature">
-                <img class="about__section-feature-img" src="/assets/home/hotel-view.jpg" alt="Hotel view from above">
-                <div class="about__section-feature-detail-team">
-                    <img src="/assets/home/icon_strong-team.svg" alt="">
-                    <h4>Strong Team</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <div class="about__section-features">
+                <div class="about__section-feature about__section-strong-team">
+                    <img class="about__section-feature-img" src="/assets/home/hotel-view.jpg" alt="Hotel view from above">
+                    <div class="about__section-feature-detail-team">
+                        <img src="/assets/home/icon_strong-team.svg" alt="">
+                        <h4>Strong Team</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="about__section-feature">
-                <img class="about__section-feature-img" src="/assets/home/room-view.jpg"
-                    alt="Room view of a pool and a lake and mountains behind">
-                <div class="about__section-feature-detail-room">
-                    <img src="/assets/home/icon_luxury-room.svg" alt="">
-                    <h4>Luxury Room</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                <div class="about__section-feature">
+                    <img class="about__section-feature-img" src="/assets/home/room-view.jpg"
+                        alt="Room view of a pool and a lake and mountains behind">
+                    <div class="about__section-feature-detail-room">
+                        <img src="/assets/home/icon_luxury-room.svg" alt="">
+                        <h4>Luxury Room</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -303,9 +305,9 @@
                     </div>
                 </div>
                 <div class="food__cards-container-button">
-                    <button class="prev-btn2  "><img src="/assets/home/icon-slider_left-arrow.svg"
+                    <button class="prev-btn"><img src="/assets/home/icon-slider_left-arrow.svg"
                             alt="left arrow"></button>
-                    <button class="next-btn2  "><img src="/assets/home/icon-slider_right-arrow.png"
+                    <button class="next-btn"><img src="/assets/home/icon-slider_right-arrow.png"
                             alt="right arrow"></button>
                 </div>
             </div>
@@ -323,25 +325,44 @@
                 </div>
             </div>
         </section>
+        <section class="stadistics__section-container">
+            <div class="stadistics__section stadistics__section-1">
+                <img src="/assets/home/icon_projects.svg" alt="Icon image">
+                <div class="stadistics__section-span">
+                    <span class="stadistics__section-span-number">84K</span>
+                    <span class="stadistics__section-span-symbol">+</span>
+                </div>
+                <p class="stadistics-category">Projects are Completed</p>
+            </div>
+            <div class="stadistics__section stadistics__section-2">
+                <img src="/assets/home/icon_active-backers.svg" alt="Icon image">
+                <div class="stadistics__section-span">
+                    <span class="stadistics__section-span-number">10M</span>
+                    <span class="stadistics__section-span-symbol">+</span>
+                </div>
+                <p class="stadistics-category">Active Backers Around World</p>
+            </div>
+            <div class="stadistics__section stadistics__section-3">
+                <img src="/assets/home/icon_categories-served.svg" alt="Icon image">
+                <div class="stadistics__section-span">
+                    <span class="stadistics__section-span-number">02K</span>
+                    <span class="stadistics__section-span-symbol">+</span>
+                </div>
+                <p class="stadistics-category">Categories Served</p>
+            </div>
+            <div class="stadistics__section stadistics__section-4">
+                <img src="/assets/home/icon_raised-funds.svg" alt="">
+                <div class="stadistics__section-span">
+                    <span class="stadistics__section-span-number">100M</span>
+                    <span class="stadistics__section-span-symbol">+</span>
+                </div>
+                <p class="stadistics-category">Idea Raised Funds</p>
+            </div>
+        </section>
     </div>
 @endsection
 
 <script>
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     // Verificar si el dispositivo es móvil
-    //     console.log(window.matchMedia("(max-width:1024px)").matches);
-    //     if (window.matchMedia("(max-width: 1024px)").matches) {
-    //         var swiper = new Swiper('.swiper-container', {
-
-    //             slidesPerView: 'auto', // Muestra la cantidad de slides que quepan en el contenedor
-    //             spaceBetween: 20, // Espacio entre las tarjetas
-    //             loop: true, // Activa el bucle infinito
-    //             // Más opciones de configuración según tus necesidades
-    //             centeredSlides: true,
-    //         });
-    //     }
-    // });
-
     document.addEventListener('DOMContentLoaded', function() {
         if (window.matchMedia("(max-width: 1024px)").matches) {
             var swiper = new Swiper('.food__cards-container', {
@@ -349,18 +370,18 @@
                 spaceBetween: 30,
                 loop: true,
                 navigation: {
-                    nextEl: '.next-btn2',
-                    prevEl: '.prev-btn2',
+                    nextEl: '.next-btn',
+                    prevEl: '.prev-btn',
                 },
             });
 
             // Manejar el clic en el botón previo
-            document.querySelector('.prev-btn2').addEventListener('click', function() {
+            document.querySelector('.prev-btn').addEventListener('click', function() {
                 swiper.slidePrev();
             });
 
             // Manejar el clic en el botón siguiente
-            document.querySelector('.next-btn2').addEventListener('click', function() {
+            document.querySelector('.next-btn').addEventListener('click', function() {
                 swiper.slideNext();
             });
         }
