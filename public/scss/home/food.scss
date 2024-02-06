@@ -1,6 +1,5 @@
 @import '../variables.scss';
 
-
 .food__section {
     width: 90%;
     margin: auto;
@@ -13,10 +12,12 @@
         position: absolute;
         width: 65px;
         right: -8%;
-        top: -5%;
+        top: -10%;
     }
 
     &-info {
+        width: 80%;
+        margin-top: 115px;
 
         h2 {
             font-family: $archivo-font;
@@ -199,8 +200,7 @@
 
 @media only screen and (min-width: 1024px) {
     .food__section {
-        width: 100%;
-        max-width: 100%;
+        max-width: 90%;
         margin-bottom: 60px;
         background-color: $background-white;
         margin: auto;
@@ -210,10 +210,10 @@
             display: flex;
             justify-content: left;
             flex-direction: column;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             padding: 10px;
-            padding-top: 30px;
+            margin-top: 0px;
         }
 
         .swiper-slide {
@@ -227,11 +227,10 @@
         &-cards-container {
             overflow: visible;
 
-
             .icon-food-desktop {
                 position: absolute;
                 width: 120px;
-                left: -15%;
+                left: -20%;
                 top: -50%;
                 z-index: 999;
                 display: flex;
@@ -241,13 +240,13 @@
                 margin: auto;
                 display: block;
                 height: fit-content;
+                margin-bottom: 40px;
 
                 div:first-child {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     gap: 20px;
 
-                    // Estilos para el primer div hijo de .food__cards-container
                     div:first-child {
                         display: flex;
                         justify-content: space-around;
@@ -256,7 +255,7 @@
                 }
 
                 .card-food {
-                    max-width: 500px;
+                    max-width: 512px;
                     margin: 0;
                     background-color: $background-white;
                     display: flex;
@@ -271,8 +270,8 @@
             }
         }
 
-        .prev-btn2 img,
-        .next-btn2 img {
+        .prev-btn img,
+        .next-btn img {
             display: none;
         }
 
