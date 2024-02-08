@@ -62,46 +62,49 @@
                 </div>
             </div>
         </section>
-        {{-- PARA DESPUES --}}
-        {{-- <section class="rooms__section">
+        <section class="rooms__section">
             <div class="rooms__section-info">
-                <p>ROOMS</p>
-                <h1>Hand Picked Rooms</h1>
+                <h2>Rooms</h2>
+                <h3>Hand Picked Rooms</h3>
             </div>
-
             <!-- Slider main container -->
-            <div class="swiper">
+            <div class="swiper swiper-container">
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     @foreach ($rooms as $room)
-                    <div class="swiper-slide">
-                        <div class="rooms__section-amenities">
-                            @foreach ($room['amenityImages'] as $image)
-                            {!! $image !!}
-                            @endforeach
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__amenities">
+                                <img src="assets/home/amenties.svg" alt="amenties" />
+                            </div>
+                            <div class="swiper-slide__images">
+                                <img src="{{ asset('assets/' . $room->image) }}" alt="room image" />
+                            </div>
+                            <div class="swiper-slide__price">
+                                <a href="../rooms-grid">
+                                    <div class="swiper-slide__price-info">
+                                        <h4>{{ $room['room_type'] }}</h4>
+                                        <p>{{ $room['description'] }}</p>
+                                    </div>
+                                    <div class="swiper-slide__price-number">
+                                        <span class='{{ $room['discount'] ? 'price-low-number' : 'price-number-big' }}'>$
+                                            {{ $room['discountedPrice'] }} <span
+                                                class="swiper-slide__price-number-night">/night</span></span>
+                                        <span class='{{ $room['discount'] ? 'price-low-text' : 'price-high-text' }}'>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="slider-images">
-                            <img src="{{$room['randomImage']}}" alt="room image" />
-                        </div>
-                        <div class="rooms__section-price">
-                            <a href="../rooms-grid">
-                                <div class="rooms__section-price-info">
-                                    <h1>{{$room['room_type']}}</h1>
-                                    <p>{{$room['description']}}</p>
-                                </div>
-                                <div class="rooms__section-price-number">
-                                    <span class='{{ $room["discount"] ? "price-low-number" : "price-number-big" }}'>$ {{$room['discountedPrice']}} /night</span>
-                                    <!-- <span class='{{ $room["discount"] ? "price-low-text" : "price-high-text" }}'> /night</span> -->
-                                </div>
-                            </a>
-                        </div>
-                    </div>
                     @endforeach
                 </div>
-                <div class="swiper-button-prev"><img src="/img/home/img-slider-left-arrow.png" alt="left arrow"></div>
-                <div class="swiper-button-next"><img src="/img/home/img-slider-right-arrow.png" alt="right arrow"></div>
+                <div class="swiper-button-prev">
+                    <img src="/assets/home/icon-slider_left-arrow.svg" alt="left arrow">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="/assets/home/icon-slider_right-arrow.png" alt="right arrow">
+                </div>
             </div>
-        </section> --}}
+        </section>
         <section class="video__section">
             <div class="video__section-content">
                 <div class="video__section-content-info">
@@ -241,7 +244,7 @@
             <div class="food__section-cards-container">
                 <img src="/assets/home/icon_food-section-desktop.png" class="icon-food-desktop">
                 <div class="food__cards-container  swiper-container">
-                    <div class="swiper-wrapper">
+                    <div class="food__section-wrapper swiper-wrapper">
                         <div class="card-food card-food1  swiper-slide">
                             <div class="section-food">
                                 <div class="card-img-food">
@@ -388,8 +391,8 @@
 
         if (window.matchMedia("(min-width: 1024px)").matches) {
             // Eliminar la clase swiper-wrapper si existe
-            let swiperWrapper = document.querySelector('.swiper-wrapper');
-            let swiperContainer = document.querySelector('.swiper-container');
+            let swiperWrapper = document.querySelector('.food__section-wrapper.swiper-wrapper');
+            let swiperContainer = document.querySelector('.food__cards-container.swiper-container');
             console.log("selected:",
                 swiperWrapper);
             if (swiperWrapper) {
@@ -397,5 +400,27 @@
                 swiperContainer.classList.remove('swiper-container');
             }
         }
+
+        // Inicializar Swiper para la sección de habitaciones
+        var swiperRooms = new Swiper('.swiper.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // Manejar el clic en el botón previo (para la sección de habitaciones)
+        document.querySelector('.swiper-button-prev').addEventListener('click', function() {
+            swiperRooms.slidePrev();
+        });
+
+        // Manejar el clic en el botón siguiente (para la sección de habitaciones)
+        document.querySelector('.swiper-button-next').addEventListener('click', function() {
+            swiperRooms.slideNext();
+        });
+
     });
 </script>
