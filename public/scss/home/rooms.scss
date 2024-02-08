@@ -108,7 +108,7 @@
                 }
 
                 &-number {
-                    font-family: Archivo;
+                    font-family: "Archivo";
                     font-size: 32px;
                     font-weight: 700;
                     line-height: 43px;
@@ -134,19 +134,13 @@
             padding-bottom: 1rem;
         }
 
-        &-button-prev {
-            margin-top: -25%;
-        }
-
+        &-button-prev,
         &-button-next {
             margin-top: -25%;
         }
 
-        .swiper-button-prev::after {
-            display: none;
-        }
-
-        .swiper-button-next::after {
+        &-button-prev::after,
+        &-button-next::after {
             display: none;
         }
 
@@ -156,6 +150,11 @@
 @media only screen and (min-width: 1024px) {
     .swiper {
         width: 600px;
+
+        &-button-prev,
+        &-button-next {
+            margin-top: -15%;
+        }
     }
 
     .slider-images img {

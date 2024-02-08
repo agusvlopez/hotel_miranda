@@ -83,9 +83,9 @@
     }
 
     .card {
-        flex: 0 0 300px;
+        flex: 0 0 320px;
         flex-direction: column;
-        max-width: 300px;
+        max-width: 320px;
         min-height: fit-content;
         display: flex;
         justify-content: center;
@@ -103,7 +103,7 @@
     .card4,
     .card5,
     .card6 {
-        padding: 15px 15px 0 15px;
+        padding: 15px;
 
         h4 {
             margin-top: 30px;
@@ -135,7 +135,13 @@
             line-height: 130px;
             color: rgb(119 119 119 / 15%);
         }
+
+        .swiper-slide-active,
+        .swiper-slide-active {
+            width: 100%;
+        }
     }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -157,7 +163,7 @@
             width: fit-content;
         }
 
-        .cards-container {
+        &-wrapper {
             display: flex;
             flex-wrap: wrap;
             height: fit-content;
@@ -165,16 +171,29 @@
             width: 100%;
         }
 
-        .card {
+        .card1,
+        .card2,
+        .card3,
+        .card4,
+        .card5,
+        .card6 {
             max-width: 300px;
             margin: 0;
             background-color: $background-white;
             transition-property: scale();
             transition-duration: 0.5s;
+        }
 
-            .card:hover {
-                scale: 1.05;
-            }
+        .card1:hover,
+        .card2:hover,
+        .card3:hover,
+        .card4:hover,
+        .card5:hover,
+        .card6:hover {
+            scale: 1.05;
+        }
+
+        .card {
 
             &-elipses {
                 display: none;
@@ -183,6 +202,11 @@
                     display: none;
                 }
             }
+        }
+
+        .prev-btn1,
+        .next-btn1 {
+            display: none;
         }
     }
 

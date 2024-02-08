@@ -861,9 +861,9 @@
   justify-content: center;
 }
 .features__section .card {
-  flex: 0 0 300px;
+  flex: 0 0 320px;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 320px;
   min-height: fit-content;
   display: flex;
   justify-content: center;
@@ -879,7 +879,7 @@
 .features__section .card4,
 .features__section .card5,
 .features__section .card6 {
-  padding: 15px 15px 0 15px;
+  padding: 15px;
 }
 .features__section .card1 h4,
 .features__section .card2 h4,
@@ -924,6 +924,20 @@
   line-height: 130px;
   color: rgba(119, 119, 119, 0.15);
 }
+.features__section .card1 .swiper-slide-active,
+.features__section .card1 .swiper-slide-active,
+.features__section .card2 .swiper-slide-active,
+.features__section .card2 .swiper-slide-active,
+.features__section .card3 .swiper-slide-active,
+.features__section .card3 .swiper-slide-active,
+.features__section .card4 .swiper-slide-active,
+.features__section .card4 .swiper-slide-active,
+.features__section .card5 .swiper-slide-active,
+.features__section .card5 .swiper-slide-active,
+.features__section .card6 .swiper-slide-active,
+.features__section .card6 .swiper-slide-active {
+  width: 100%;
+}
 
 @media screen and (min-width: 1024px) {
   .features__section {
@@ -941,27 +955,41 @@
     height: fit-content;
     width: fit-content;
   }
-  .features__section .cards-container {
+  .features__section-wrapper {
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
     gap: 10px;
     width: 100%;
   }
-  .features__section .card {
+  .features__section .card1,
+  .features__section .card2,
+  .features__section .card3,
+  .features__section .card4,
+  .features__section .card5,
+  .features__section .card6 {
     max-width: 300px;
     margin: 0;
     background-color: #FFFFFF;
     transition-property: scale();
     transition-duration: 0.5s;
   }
-  .features__section .card .card:hover {
+  .features__section .card1:hover,
+  .features__section .card2:hover,
+  .features__section .card3:hover,
+  .features__section .card4:hover,
+  .features__section .card5:hover,
+  .features__section .card6:hover {
     scale: 1.05;
   }
   .features__section .card-elipses {
     display: none;
   }
   .features__section .card-elipses img {
+    display: none;
+  }
+  .features__section .prev-btn1,
+  .features__section .next-btn1 {
     display: none;
   }
 }
@@ -1054,7 +1082,7 @@
   color: #777777;
 }
 .rooms__section .swiper-slide__price-number {
-  font-family: Archivo;
+  font-family: "Archivo";
   font-size: 32px;
   font-weight: 700;
   line-height: 43px;
@@ -1073,22 +1101,19 @@
   height: fit-content;
   padding-bottom: 1rem;
 }
-.rooms__section .swiper-button-prev {
+.rooms__section .swiper-button-prev, .rooms__section .swiper-button-next {
   margin-top: -25%;
 }
-.rooms__section .swiper-button-next {
-  margin-top: -25%;
-}
-.rooms__section .swiper .swiper-button-prev::after {
-  display: none;
-}
-.rooms__section .swiper .swiper-button-next::after {
+.rooms__section .swiper-button-prev::after, .rooms__section .swiper-button-next::after {
   display: none;
 }
 
 @media only screen and (min-width: 1024px) {
   .swiper {
     width: 600px;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    margin-top: -15%;
   }
   .slider-images img {
     max-width: 600px;

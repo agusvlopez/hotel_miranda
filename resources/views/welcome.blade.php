@@ -129,110 +129,72 @@
                 <h3>Core Features</h3>
             </div>
             <div class="features__section-cards-container">
-                <div class="cards-container">
-                    <div class="card card1" id="feature-1">
-                        <div class="card-img">
-                            <img src="/assets/home/icon_facilities-1.svg" alt="">
+                <div class="cards-container swiper-container">
+                    <div class="features__section-wrapper swiper-wrapper">
+                        <div class="card card1  swiper-slide">
+                            <div class="card-img">
+                                <img src="/assets/home/icon_facilities-1.svg" alt="image card 1">
+                            </div>
+                            <h4>Have High Rating</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna..</p>
+                            <span class="card-number">01</span>
                         </div>
-                        <h4>Have High Rating</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna..</p>
-                        <span class="card-number">01</span>
-                        <div class="features__section-slider-nav">
-                            <a href="#feature-1" class="a-selected"></a>
-                            <a href="#feature-2"></a>
-                            <a href="#feature-3"></a>
-                            <a href="#feature-4"></a>
-                            <a href="#feature-5"></a>
-                            <a href="#feature-6"></a>
+                        <div class="card card2  swiper-slide">
+                            <div class="card-img">
+                                <img src="/assets/home/icon_facilities-2.png" alt="image card 1">
+                            </div>
+                            <h4>Quiet Hours</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna..</p>
+                            <span class="card-number">02</span>
                         </div>
-                    </div>
-                    <div class="card card2" id="feature-2">
-                        <div class="card-img">
-                            <img src="/assets/home/icon_facilities-2.png" alt="">
+                        <div class="card card3  swiper-slide">
+                            <div class="card-img">
+                                <img src="/assets/home/icon_facilities-3.png" alt="image card 1">
+                            </div>
+                            <h4>Best Locations</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna..</p>
+                            <span class="card-number">03</span>
                         </div>
-                        <h4>Quiet Hours</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna..</p>
-                        <span class="card-number">02</span>
-                        <div class="features__section-slider-nav">
-                            <a href="#feature-1"></a>
-                            <a href="#feature-2" class="a-selected"></a>
-                            <a href="#feature-3"></a>
-                            <a href="#feature-4"></a>
-                            <a href="#feature-5"></a>
-                            <a href="#feature-6"></a>
+                        <div class="card card4  swiper-slide">
+                            <div class="card-img">
+                                <img src="/assets/home/icon_facilities-4.png" alt="image card 1">
+                            </div>
+                            <h4>Free Cancellation</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna..</p>
+                            <span class="card-number">04</span>
                         </div>
-                    </div>
-                    <div class="card card3" id="feature-3">
-                        <div class="card-img">
-                            <img src="/assets/home/icon_facilities-3.png" alt="">
+                        <div class="card card5  swiper-slide">
+                            <div class="card-img">
+                                <img src="/assets/home/icon_facilities-5.png" alt="image card 1">
+                            </div>
+                            <h4>Payment Options</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna..</p>
+                            <span class="card-number">05</span>
                         </div>
-                        <h4>Best Locations</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna..</p>
-                        <span class="card-number">03</span>
-                        <div class="features__section-slider-nav">
-                            <a href="#feature-1"></a>
-                            <a href="#feature-2"></a>
-                            <a href="#feature-3" class="a-selected"></a>
-                            <a href="#feature-4"></a>
-                            <a href="#feature-5"></a>
-                            <a href="#feature-6"></a>
-                        </div>
-                    </div>
-                    <div class="card card4" id="feature-4">
-                        <div class="card-img">
-                            <img src="/assets/home/icon_facilities-4.png" alt="">
-                        </div>
-                        <h4>Free Cancellation</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna..</p>
-                        <span class="card-number">04</span>
-                        <div class="features__section-slider-nav">
-                            <a href="#feature-1"></a>
-                            <a href="#feature-2"></a>
-                            <a href="#feature-3"></a>
-                            <a href="#feature-4" class="a-selected"></a>
-                            <a href="#feature-5"></a>
-                            <a href="#feature-6"></a>
-                        </div>
-                    </div>
-                    <div class="card card5" id="feature-5">
-                        <div class="card-img">
-                            <img src="/assets/home/icon_facilities-5.png" alt="">
-                        </div>
-                        <h4>Payment Options</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna..</p>
-                        <span class="card-number">05</span>
-                        <div class="features__section-slider-nav">
-                            <a href="#feature-1"></a>
-                            <a href="#feature-2"></a>
-                            <a href="#feature-3"></a>
-                            <a href="#feature-4"></a>
-                            <a href="#feature-5" class="a-selected"></a>
-                            <a href="#feature-6"></a>
-                        </div>
-                    </div>
-                    <div class="card card6" id="feature-6">
-                        <div class="card-img">
-                            <img src="/assets/home/icon_facilities-6.png" alt="">
-                        </div>
-                        <h4>Special Offers</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna..</p>
-                        <span class="card-number">06</span>
-                        <div class="features__section-slider-nav">
-                            <a href="#feature-1"></a>
-                            <a href="#feature-2"></a>
-                            <a href="#feature-3"></a>
-                            <a href="#feature-4"></a>
-                            <a href="#feature-5"></a>
-                            <a href="#feature-6" class="a-selected"></a>
+                        <div class="card card6  swiper-slide">
+                            <div class="card-img">
+                                <img src="/assets/home/icon_facilities-6.png" alt="image card 1">
+                            </div>
+                            <h4>Special Offers</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna..</p>
+                            <span class="card-number">06</span>
                         </div>
                     </div>
                 </div>
+                <button class="prev-btn1"><img src="/assets/home/icon-slider_left-arrow.svg" alt="left arrow"></button>
+                <button class="next-btn1"><img src="/assets/home/icon-slider_right-arrow.png" alt="right arrow"></button>
             </div>
         </section>
         <section class="food__section">
@@ -368,6 +330,29 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         if (window.matchMedia("(max-width: 1024px)").matches) {
+
+            var swiperFeatures = new Swiper('.cards-container', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                centeredSlides: false, // Esta línea centra las tarjetas
+                navigation: {
+                    nextEl: '.next-btn1',
+                    prevEl: '.prev-btn1',
+                },
+            });
+
+            // Manejar el clic en el botón previo
+            document.querySelector('.prev-btn1').addEventListener('click', function() {
+                swiperFeatures.slidePrev();
+            });
+
+            // Manejar el clic en el botón siguiente
+            document.querySelector('.next-btn1').addEventListener('click', function() {
+                swiperFeatures.slideNext();
+            });
+
+
             var swiper = new Swiper('.food__cards-container', {
                 slidesPerView: 1,
                 spaceBetween: 30,
@@ -393,11 +378,18 @@
             // Eliminar la clase swiper-wrapper si existe
             let swiperWrapper = document.querySelector('.food__section-wrapper.swiper-wrapper');
             let swiperContainer = document.querySelector('.food__cards-container.swiper-container');
-            console.log("selected:",
-                swiperWrapper);
+
+            let swiperWrapperFeatures = document.querySelector('.features__section-wrapper.swiper-wrapper');
+            let swiperContainerFeatures = document.querySelector('.cards-container.swiper-container');
+
             if (swiperWrapper) {
                 swiperWrapper.classList.remove('swiper-wrapper');
                 swiperContainer.classList.remove('swiper-container');
+            }
+
+            if (swiperWrapperFeatures) {
+                swiperWrapperFeatures.classList.remove('swiper-wrapper');
+                swiperContainerFeatures.classList.remove('swiper-container');
             }
         }
 
