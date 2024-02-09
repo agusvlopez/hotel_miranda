@@ -7,6 +7,8 @@
 @import './home/video.scss';
 @import './home/features.scss';
 @import './home/rooms.scss';
+@import './rooms/grid.scss';
+@import './rooms/about.scss';
 
 html,
 * {
@@ -111,12 +113,21 @@ header {
             &.show {
                 display: flex;
             }
-        }
 
-        .menu__items-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+            &-list {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+
+                a {
+                    text-decoration: none;
+                    color: $letterColor-black;
+                }
+
+                a:hover {
+                    color: $color-botton;
+                }
+            }
         }
 
         li {

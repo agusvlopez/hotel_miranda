@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hotel Miranda</title>
+    <title>@yield('title') :: Hotel Miranda</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
             <a href="#">
                 <div class="menu__icon" id="menuIcon"></div>
             </a>
-            <a href="#" class="menu__logo">
+            <a href="./" class="menu__logo">
                 <div class="menu__logo_section">
                     <div class="menu__logo_section-H"><span>H</span></div>
                     <div class="menu__logo_section-name"><span class="menu__logo_section-name_hotel">Hotel</span>
@@ -37,7 +37,7 @@
             <nav class="menu__items" id="menuItems">
                 <ul class="menu__items-list">
                     <li>About us</li>
-                    <li>Rooms</li>
+                    <li><a href="./rooms-grid">Rooms</a></li>
                     <li>Offers</li>
                     <li>Contact</li>
                 </ul>

@@ -18,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', [RoomController::class, 'index']);
+Route::get('/rooms-grid', [RoomController::class, 'rooms']);

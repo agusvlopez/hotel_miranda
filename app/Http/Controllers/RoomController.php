@@ -12,4 +12,10 @@ class RoomController extends Controller
         $rooms = Room::all();
         return view('welcome', ['rooms' => $rooms]);
     }
+
+    public function rooms()
+    {
+        $rooms = Room::all();
+        return view('rooms', ['rooms' => $rooms]);
+    }
 }
