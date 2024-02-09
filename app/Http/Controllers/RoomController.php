@@ -15,7 +15,7 @@ class RoomController extends Controller
 
     public function rooms()
     {
-        $rooms = Room::all();
+        $rooms = Room::paginate(6);
         return view('rooms', ['rooms' => $rooms]);
     }
 }
