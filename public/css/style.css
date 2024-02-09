@@ -1122,22 +1122,15 @@
 .rooms__slider__section {
   width: 100%;
 }
-.rooms__slider__section-container {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: auto;
-  background-color: #FFFFFF;
-}
 .rooms__slider__section .rooms-slider-container {
   background-color: #FFFFFF;
 }
-.rooms__slider__section .rooms-slider-container .rooms-slider {
+.rooms__slider__section .rooms-slider-container .rooms__slider {
   max-width: 300px;
   margin: auto;
   margin-top: 45px;
 }
-.rooms__slider__section .rooms-slider-container .rooms-slider h3 {
+.rooms__slider__section .rooms-slider-container .rooms__slider h3 {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 24px;
@@ -1147,7 +1140,7 @@
   text-align: center;
   margin-top: 48px;
 }
-.rooms__slider__section .rooms-slider-container .rooms-slider p {
+.rooms__slider__section .rooms-slider-container .rooms__slider p {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
@@ -1156,121 +1149,11 @@
   text-align: center;
   margin: 13px 0px;
 }
-.rooms__slider__section .rooms-slider-container .rooms-slider img {
+.rooms__slider__section .rooms-slider-container .rooms__slider img {
   max-width: 100%;
   border-radius: 3px;
 }
-
-.rooms__grid-price {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto;
-}
-.rooms__grid-price span {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 17.41px;
-  color: #BEAD8E;
-}
-.rooms__grid-price form button {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 17.41px;
-  color: #BDBDBD;
-  border: none;
-  background: transparent;
-  transition: transform;
-  text-decoration: none;
-}
-.rooms__grid-price form button:hover {
-  transform: scale(1.05);
-  background-color: #BEAD8E;
-  color: white;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 2px;
-  width: 114px;
-}
-
-.rooms-pagination .rooms-pages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-.rooms-pagination .rooms-pages nav {
-  font-family: "Oswald";
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 19px;
-  letter-spacing: 0px;
-  text-align: center;
-  color: #222222;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-}
-.rooms-pagination .rooms-pages nav a {
-  text-decoration: none;
-  color: #292929;
-}
-.rooms-pagination .rooms-pages nav a:hover {
-  color: #BEAD8E;
-}
-.rooms-pagination .rooms-pages nav > div:last-child > div:last-child {
-  margin-top: 21px;
-  text-decoration: none;
-  /* Estilos para el último div hijo del último div hijo del nav */
-}
-.rooms-pagination .rooms-pages nav > div:last-child > div:last-child span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.rooms-pagination .rooms-pages nav > div:last-child > div:last-child span span[aria-current=page] {
-  color: #FFFFFF;
-  background-color: #BEAD8E;
-  display: flex;
-  align-self: center;
-  width: 39px;
-  height: 39px;
-}
-.rooms-pagination .rooms-pages svg {
-  display: none;
-}
-
-.rooms-pagination button {
-  padding: 5px 10px;
-  margin: 0 5px;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-}
-
-.rooms-pagination .rooms-pages {
-  display: flex;
-}
-
-.rooms-pagination .rooms-pages button {
-  border: none;
-  background: transparent;
-  padding: 5px 8px;
-  cursor: pointer;
-}
-
-.rooms-pagination .rooms-pages button.active {
-  background-color: #BEAD8E;
-  color: #FFFFFF;
-}
-
-.rooms__section-amenities {
+.rooms__slider__section .rooms-slider-container .rooms__slider-amenities {
   width: 256px;
   height: 40px;
   display: flex;
@@ -1286,6 +1169,91 @@
   display: flex;
   justify-content: center;
   box-shadow: 0px 3px 6px 0px rgba(68, 68, 68, 0.64);
+}
+.rooms__slider__section .rooms-slider-container .rooms__slider-price {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.rooms__slider__section .rooms-slider-container .rooms__slider-price span {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17.41px;
+  color: #BEAD8E;
+}
+.rooms__slider__section .rooms-slider-container .rooms__slider-price form button {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17.41px;
+  color: #BDBDBD;
+  border: none;
+  background: transparent;
+  transition: transform;
+  text-decoration: none;
+  padding: 2px;
+}
+.rooms__slider__section .rooms-slider-container .rooms__slider-price form button:hover {
+  transform: scale(1.05);
+  background-color: #BEAD8E;
+  color: white;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  width: 114px;
+}
+.rooms__slider__section .rooms-pagination .rooms-pages {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+.rooms__slider__section .rooms-pagination .rooms-pages nav {
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #222222;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.rooms__slider__section .rooms-pagination .rooms-pages nav a {
+  text-decoration: none;
+  color: #292929;
+}
+.rooms__slider__section .rooms-pagination .rooms-pages nav a:hover {
+  color: #BEAD8E;
+}
+.rooms__slider__section .rooms-pagination .rooms-pages nav > div:last-child > div:last-child {
+  margin-top: 21px;
+  text-decoration: none;
+  /* Estilos para el último div hijo del último div hijo del nav */
+}
+.rooms__slider__section .rooms-pagination .rooms-pages nav > div:last-child > div:last-child span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.rooms__slider__section .rooms-pagination .rooms-pages nav > div:last-child > div:last-child span span[aria-current=page] {
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+  display: flex;
+  align-self: center;
+  width: 39px;
+  height: 39px;
+}
+.rooms__slider__section .rooms-pagination .rooms-pages svg {
+  display: none;
 }
 
 @media only screen and (min-width: 1000px) {

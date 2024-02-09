@@ -21,14 +21,14 @@
     <section class="rooms__slider__section">
         <div class="rooms-slider-container">
             @foreach ($rooms as $room)
-                <div class="rooms-slider">
+                <div class="rooms__slider">
                     <img src="{{ asset('assets/' . $room->image) }}" alt="room image" />
-                    <div class="rooms__section-amenities">
+                    <div class="rooms__slider-amenities">
                         <img src="assets/home/amenties.svg" alt="amenties" />
                     </div>
                     <h3>{{ $room['room_type'] }}</h3>
                     <p>{{ $room['description'] }}</p>
-                    <div class="rooms__grid-price">
+                    <div class="rooms__slider-price">
                         <span class='{{ $room['discount'] ? 'price-low-number' : 'price-number-small' }}'>$
                             {{ $room['discountedPrice'] }} /Night</span>
                         <form action="../room-detail" method="GET">
