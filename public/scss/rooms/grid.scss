@@ -69,33 +69,31 @@
                     color: $color-botton;
                 }
 
-                form {
-
-                    button {
-                        font-family: $archivo-font;
-                        font-weight: $weight-700;
-                        font-size: 16px;
-                        line-height: 17.41px;
-                        color: #BDBDBD;
-                        border: none;
-                        background: transparent;
-                        transition: transform;
-                        text-decoration: none;
-                        padding: 2px;
-                    }
-
-                    button:hover {
-                        transform: scale(1.05);
-                        background-color: #BEAD8E;
-                        color: white;
-                        height: 20px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 2px;
-                        width: 114px;
-                    }
+                a {
+                    font-family: $archivo-font;
+                    font-weight: $weight-700;
+                    font-size: 16px;
+                    line-height: 17.41px;
+                    color: #BDBDBD;
+                    border: none;
+                    background: transparent;
+                    transition: transform;
+                    text-decoration: none;
+                    padding: 2px;
                 }
+
+                a:hover {
+                    transform: scale(1.05);
+                    background-color: #BEAD8E;
+                    color: white;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 2px;
+                    width: 114px;
+                }
+
             }
         }
     }

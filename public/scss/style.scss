@@ -1,4 +1,5 @@
 @import 'variables.scss';
+@import './login.scss';
 @import './home/food.scss';
 @import './home/stadistics.scss';
 @import './home/front.scss';
@@ -286,9 +287,37 @@ header {
     }
 }
 
-.home {
-    background-color: #FFFFFF;
+main {
+    .alert {
+        font-family: "Archivo";
+        position: relative;
+        padding: 15px;
+        border: 1px solid transparent;
+        margin-bottom: 20px;
+        width: fit-content;
+        margin: 8px auto;
+    }
 
+    .alert-success {
+        position: absolute;
+        left: 10;
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+    }
+
+    .alert-danger {
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+    }
+
+    .home {
+        background-color: #FFFFFF;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -419,6 +448,33 @@ header {
             &-by {
                 margin-bottom: 0;
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    main {
+        .container {
+            position: relative;
+            /* Asegura que el contenedor sea relativo */
+        }
+
+        .alert {
+            position: absolute;
+            top: 20px;
+            /* Ajusta la distancia desde la parte superior según sea necesario */
+            right: 1px;
+            /* Ajusta la distancia desde la derecha según sea necesario */
+        }
+
+        .alert-success {
+            top: 100px;
+            left: 0;
+            margin-right: 20px;
+        }
+
+        .alert-danger {
+            top: 100px;
         }
     }
 }

@@ -1,4 +1,87 @@
 @charset "UTF-8";
+.login__section {
+  font-family: "Archivo";
+  color: #FFFFFF;
+  min-height: 80vh;
+  background: #333333;
+  padding: 80px 20px 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login__section h1 {
+  text-transform: uppercase;
+}
+.login__section .login__section-form {
+  flex-direction: row;
+  max-width: 776px;
+  padding-top: 0;
+  max-width: none;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-evenly;
+}
+.login__section .login__section-form-email label, .login__section .login__section-form-pass label {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+.login__section .login__section-form-email {
+  margin-bottom: 25px;
+}
+.login__section .login__section-form .input-email,
+.login__section .login__section-form .input-pass {
+  position: relative;
+  display: flex;
+  padding-bottom: 7px;
+  flex-direction: row-reverse;
+  background-color: transparent;
+  color: #b3a5a5;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom-color: #BEAD8E;
+  width: 290px;
+  padding-left: 30px;
+  padding-top: 20px;
+  font-family: "Roboto";
+  outline: none;
+}
+.login__section .login__section-form-button {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  transition: transform 0.2s;
+}
+.login__section .login__section-form-button:hover {
+  transform: scale(1.02);
+}
+.login__section .login__section-form-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 60px;
+  background-color: #BEAD8E;
+  color: #FFFFFF;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+  .login__section {
+    padding-top: 120px;
+  }
+}
 .food__section {
   width: 90%;
   margin: auto;
@@ -360,6 +443,10 @@
   text-transform: uppercase;
   text-align: center;
   padding: 22.8px 48.73px;
+  transition: transform 0.2s;
+}
+.front__section_buttons a:hover {
+  transform: scale(1.02);
 }
 .front__section_buttons-tour {
   background: #BEAD8E;
@@ -477,11 +564,11 @@
   color: #FFFFFF;
   border: none;
   font-size: 14px;
-  font-family: Archivo;
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.8px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1183,7 +1270,7 @@
   line-height: 17.41px;
   color: #BEAD8E;
 }
-.rooms__slider__section .rooms-slider-container .rooms__slider-price form button {
+.rooms__slider__section .rooms-slider-container .rooms__slider-price a {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 16px;
@@ -1195,7 +1282,7 @@
   text-decoration: none;
   padding: 2px;
 }
-.rooms__slider__section .rooms-slider-container .rooms__slider-price form button:hover {
+.rooms__slider__section .rooms-slider-container .rooms__slider-price a:hover {
   transform: scale(1.05);
   background-color: #BEAD8E;
   color: white;
@@ -1607,7 +1694,31 @@ header .icons-section__search-icon {
   margin-bottom: 20px;
 }
 
-.home {
+main .alert {
+  font-family: "Archivo";
+  position: relative;
+  padding: 15px;
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+  width: fit-content;
+  margin: 8px auto;
+}
+main .alert-success {
+  position: absolute;
+  left: 10;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+main .alert-danger {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+main .home {
   background-color: #FFFFFF;
 }
 
@@ -1708,6 +1819,27 @@ header .icons-section__search-icon {
   }
   .footer__copyright-by {
     margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main .container {
+    position: relative;
+    /* Asegura que el contenedor sea relativo */
+  }
+  main .alert {
+    position: absolute;
+    top: 20px;
+    /* Ajusta la distancia desde la parte superior según sea necesario */
+    right: 1px;
+    /* Ajusta la distancia desde la derecha según sea necesario */
+  }
+  main .alert-success {
+    top: 100px;
+    left: 0;
+    margin-right: 20px;
+  }
+  main .alert-danger {
+    top: 100px;
   }
 }
 

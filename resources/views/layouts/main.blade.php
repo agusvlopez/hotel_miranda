@@ -40,13 +40,13 @@
             <nav class="menu__items" id="menuItems">
                 <ul class="menu__items-list">
                     <li>About us</li>
-                    <li><a href="./rooms-grid">Rooms</a></li>
+                    <li><a href="/rooms-grid">Rooms</a></li>
                     <li>Offers</li>
                     <li>Contact</li>
                 </ul>
             </nav>
             <div class="icons-section">
-                <a href="#" class="icons-section__user-section"><span class="icons-section__user-icon"
+                <a href="/login" class="icons-section__user-section"><span class="icons-section__user-icon"
                         aria-label="My profile"></span></a>
                 <a href="#" class="icons-section__search-section"><span class="icons-section__search-icon"
                         aria-label="Search"></span></a>
@@ -54,7 +54,15 @@
         </div>
     </header>
     <main>
+        <div class="container">
+            @if (\Session::has('status.message'))
+                <div class="alert alert-success">{!! \Session::get('status.message') !!}</div>
+            @elseif (\Session::has('danger.message'))
+                <div class="alert alert-danger">{!! \Session::get('danger.message') !!}</div>
+            @endif
+        </div>
         @yield('content')
+
     </main>
 
     <footer class="footer">

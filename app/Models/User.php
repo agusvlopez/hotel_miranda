@@ -42,4 +42,19 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public static $rules = [
+        'email' => 'required',
+        'password' => 'required',
+    ];
+
+    public static $updateRules = [
+        'email' => 'required|email',
+        'password' => 'nullable|min:6',
+    ];
+
+    public static $errorMessages = [
+        'email.required' => 'Debe ingresar un email.',
+        'password.required' => 'Debe ingresar una contraseña.',
+    ];
 }

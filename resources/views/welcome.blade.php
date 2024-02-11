@@ -6,7 +6,7 @@
             <p>THE ULTIMATE LUXURY EXPERIENCE</p>
             <h1><span>The Perfect</span> Base For You</h1>
             <div class="front__section_buttons">
-                <a href="#" class="front__section_buttons-tour">Take a tour</a>
+                <a href="/rooms-grid" class="front__section_buttons-tour">Take a tour</a>
                 <a href="#" class="front__section_buttons-more">Learn more</a>
             </div>
         </section>

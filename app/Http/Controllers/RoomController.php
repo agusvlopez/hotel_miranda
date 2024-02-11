@@ -18,4 +18,11 @@ class RoomController extends Controller
         $rooms = Room::paginate(6);
         return view('rooms', ['rooms' => $rooms]);
     }
+
+    public function viewRoomDetail(int $id)
+    {
+        return view('room-detail', [
+            'room' =>Room::findOrFail($id),
+        ]);
+    }
 }

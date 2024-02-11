@@ -31,10 +31,11 @@
                     <div class="rooms__slider-price">
                         <span class='{{ $room['discount'] ? 'price-low-number' : 'price-number-small' }}'>$
                             {{ $room['discountedPrice'] }} /Night</span>
-                        <form action="../room-detail" method="GET">
+                        {{-- <form action="../room-detail" method="GET">
                             <input type="hidden" name="roomId" value="{{ $room['id'] }}">
                             <button type="submit">Booking Now</button>
-                        </form>
+                        </form> --}}
+                        <a href="{{ route('room.detail', ['id' => $room->id]) }}" class="link me-4">Booking Now</a>
                     </div>
                 </div>
             @endforeach

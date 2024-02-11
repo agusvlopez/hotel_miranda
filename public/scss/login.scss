@@ -1,0 +1,97 @@
+@import './variables.scss';
+
+.login__section {
+    font-family: "Archivo";
+    color: #FFFFFF;
+    min-height: 80vh;
+    background: #333333;
+    padding: 80px 20px 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    .login__section-form {
+        flex-direction: row;
+        max-width: 776px;
+        padding-top: 0;
+        max-width: none;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        justify-content: space-evenly;
+
+        &-email,
+        &-pass {
+
+            label {
+                color: #FFFFFF;
+                font-size: 16px;
+                line-height: 18.75px;
+            }
+        }
+
+        &-email {
+            margin-bottom: 25px;
+        }
+
+        .input-email,
+        .input-pass {
+            position: relative;
+            display: flex;
+            padding-bottom: 7px;
+            flex-direction: row-reverse;
+            background-color: transparent;
+            color: #b3a5a5;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom-color: #BEAD8E;
+            width: 290px;
+            padding-left: 30px;
+            padding-top: 20px;
+            font-family: "Roboto";
+            outline: none;
+        }
+
+        &-button {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            transition: transform 0.2s;
+        }
+
+        &-button:hover {
+            transform: scale(1.02);
+        }
+
+        &-button button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 290px;
+            height: 60px;
+            background-color: #BEAD8E;
+            color: #FFFFFF;
+            border: none;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 15.23px;
+            letter-spacing: 2.8px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .login__section {
+        padding-top: 120px;
+    }
+}
